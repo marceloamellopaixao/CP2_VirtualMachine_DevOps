@@ -10,5 +10,5 @@
 ## Link de Instalação do Oracle VM VirtualBox:
 [Oracle VM VirtualBox AMD64 64bits](https://www.virtualbox.org/wiki/Downloads)
 
-## Link de Instalação do Ubuntu:
+## Link de Instalação do Ubuntu (Clique no link abaixo e aguarde):
 [Ubuntu 22.04.4 ISO AMD64 64bits](https://ubuntu.com/download/desktop/thank-you?version=22.04.4&architecture=amd64)
