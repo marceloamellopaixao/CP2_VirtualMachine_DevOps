@@ -11,4 +11,4 @@
 <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Oracle VM VirtualBox AMD64 64bits</a>
 
 ## Link de Instalação do Ubuntu:
-<a href="[https://www.virtualbox.org/wiki/Downloads](https://ubuntu.com/download/desktop/thank-you?version=22.04.4&architecture=amd64)" target="_blank">Ubuntu 22.04.4 ISO AMD64 64bits</a>
+<a href="[https://www.virtualbox.org/wiki/Downloads](https://ubuntu.com/download/desktop/thank-you?version=22.04.4&architecture=amd64" target="_blank">Ubuntu 22.04.4 ISO AMD64 64bits</a>
