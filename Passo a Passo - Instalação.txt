@@ -1,0 +1,186 @@
+
+- Baixe o Oracle VM VirtualBox (Vá no campo: Platform Packages, referente ao seu Sistema Operacional)
+https://www.virtualbox.org/wiki/Downloads
+--------------------------------------------------------------------------------------------------------------
+- Baixe no site da Ubuntu a ISO do Linux
+https://ubuntu.com/download/desktop/thank-you?version=22.04.4&architecture=amd64
+--------------------------------------------------------------------------------------------------------------
+
+- Crie uma Nova Máquina Virtual no botão "Novo"
+Segue os dados abaixo (referente a VM Nova):
+
+- Nome: Ubuntu - Checkpoint 2 (Nome de sua escolha)
+- Pasta da Máquina: Onde irá salvar a VM
+- Tipo: Qual o tipo do Sistema Operacional? (Ubuntu é Linux)
+- Versão: Qual a versão do Sistema Operacional? (Ubuntu é 64bits)
+
+Clique em Próximo
+--------------------------------------------------------------------------------------------------------------
+
+Tamanho da Memória:
+- Coloque um valor que seja coerente a quantidade disponível de memória RAM do seu Computador, 
+dependendo da quantidade definida pode relacionar entre a velocidade de instalação,
+Exemplo: Meu computador tem 32GB, posso colocar entre 4GB (Normal), 8GB (Um pouco mais rápida), 16GB ou + (Rápida)
+
+Clique em Próximo
+--------------------------------------------------------------------------------------------------------------
+
+Tipo de Arquivo de Disco Rígido:
+- Utilizar o padrão VDI (VirtualBox Disk Image)
+
+Clique em Próximo
+--------------------------------------------------------------------------------------------------------------
+
+Armazenamento em disco rígido físico:
+- Utilizar a opção Dinamicamente alocado (Irá utilizar somente o necessário do HD)
+
+Clique em Próximo
+--------------------------------------------------------------------------------------------------------------
+
+Localização e tamanho do arquivo
+- Você pode definir conforme necessita, neste caso pode utilizar (50GB para a realização deste).
+
+Clique em Criar
+--------------------------------------------------------------------------------------------------------------
+AINDA NO VIRTUALBOX
+Clique no botão de Configurações:
+
+Geral:
+Clique em Avançado:
+Área de Transferência Compartilhada: Bi-Direcional (Para que serve? No ato de copiar uma informação no fisico, é possível colar na VM também e o mesmo serve para o inverso).
+Arrastar e Soltar: Bi-Direcional (Para que serve? Utilizado para arrastar um arquivo do pc fisico para a VM e o mesmo serve para o inverso).
+
+--------------------------------------------------
+Sistema:
+Selecione Placa-Mãe:
+- Ordem de Bot: 1º Óptico e 2º Disco Rígido (Ativos), os demais desativar.
+
+--------------------
+Selecione Processador:
+Processador(es): Colocar a quantidade de núcleos que o processador comporta, 
+lembrando que quanto mais processamento, melhor será o desempenho da VM (varia do que irá utilizá-la)
+Exemplo: Meu processador tem 12 CPUs, podendo colocar no recomendado que é 6 ou menos.
+
+--------------------------------------------------
+Rede:
+Selecione Adaptador 1
+- Conectado a: NAT (Network Address Translation)
+
+Explicação: Permite que a VM acesse a internet, mas não dá acesso à rede interna.
+A VM terá um IP privado e será traduzida para o IP público do host para acessar recursos externos.
+Escolha essa opção se você quiser que a VM acesse apenas a internet
+
+--------------------------------------------------
+Armazenamento:
+Selecione a Controladora IDE:
+- aperte num disco/cd no lado direito da Opção Drive Óptico, selecione a opção "escolher uma imagem de disco" e aperte na ISO escolhida.
+
+Clique em OK
+--------------------------------------------------------------------------------------------------------------
+
+Inicializando a VM e fazendo a instalação:
+- Clique em Iniciar
+--------------------
+A VM irá iniciar, assim que mostrar uma tela de opção, 
+- selecione a opção Try or Install Ubuntu
+--------------------
+Tela de Instalação:
+- Coloque o Idioma desejado (Português do Brasil)
+- Selecione a Opção Instalar o Ubuntu.
+--------------------
+Layout do teclado: 
+- Se já estiver o idioma do teclado correto, clique em continuar.
+--------------------
+Atualizações e outros aplicativos:
+- Deixe o padrão, e ative a opção,
+Instalar programas de terceiros para placas de vídeo, dispositivos  Wi-Fi e outros formatos de mídia.
+
+Clique em Continuar
+--------------------
+Tipo de Instalação:
+- Selecionar a Opção "Apagar disco e reinstalar o Ubuntu"
+
+Clique em Instalar Agora e Continuar
+--------------------
+Onde você está?
+- Coloque a região em que você se encontra, no meu caso é São Paulo.
+--------------------
+Quem é você?
+Digite os seguintes dados de Exemplo:
+- Seu nome: Grupo Technos
+- Nome do seu computador: CpDevOps2
+- Usuário: cpdevops
+- Senha: CpUbuntu@22
+
+Clique em Continuar
+--------------------
+Aguarde a Instalação até o Final (Não desligar a VM).
+
+Ao finalizar, irá aparecer a opção Reiniciar agora, aperte enter ou clique em cima.
+--------------------
+Na reinicialização da VM irá aparecer a seguinte mensagem,
+- Please remove the installation medium, then press ENTER:
+Tradução: Remova a mídia de instalação e pressione ENTER:
+
+Neste caso só pressionar ENTER que irá continuar normalmente.
+--------------------
+Ao iniciar o Ubuntu, irá aparecer o usuário
+- Caso apareça a mensagem de falha na conexão de rede é normal, pois será ajustado.
+
+Faça o login, usuário e senha que foi infomado anteriormente.
+- Usuário: cpdevops
+- Senha: CpUbuntu@22
+--------------------
+Caso apareça uma janela com as seguintes informações,
+- Contas On-line (Clique em Ignorar)
+- Ubuntu Pro (Clique em Próximo)
+- Ajude a melhorar o Ubuntu (Colocar que não, caso não queira e Clique em Próximo)
+- Privacidade (Clique em Próximo)
+- Softwares (Clique em Loja ou em Feito caso não queira instalar nada no momento)
+--------------------
+Atualizando o Linux:
+
+Abra o Terminal e entre como usuário administrador (Root)
+Digite o comando: sudo su -
+Coloque a senha do usuário e siga os próximos passos.
+
+Passo 1: Atualizando Pacotes do Sistema
+Descrição:Use sudo apt update para atualizar o índice de pacotes local. 
+O comando recupera informações sobre as últimas versões de pacotes 
+disponíveis dos repositórios configurados no sistema.
+
+- Comando: sudo apt update
+
+----------
+Passo 2: Execute a atualização
+Descrição: Para atualizar os pacotes instalados, incluindo o kernel, 
+para as versões mais recentes disponíveis nos repositórios.
+
+- Comando: sudo apt upgrade
+
+----------
+Passo 3: Verifique as Mudanças
+Descrição: O comando abaixo, verifica a ultima versão instalada no Kernel do Linux
+- Comando: uname -r
+
+----------
+Faça a instalação da Extensão Pack do VirtualBox:
+
+Ainda no Terminal, basta instalar o pacote chamado virtualbox-ext-pack.
+- Comando: sudo apt install virtualbox-ext-pack
+----------
+Dessa forma, você pode ter certeza de que a versão correta será instalada e eles também serão atualizados juntos, se necessário. Então o nome do jogo é usar a mesma versão para os pacotes, possivelmente usar o mesmo repositório também, de preferência os repositórios da sua distribuição. 
+Após a instalação você possivelmente precisará
+- Comando: sudo modprobe vboxdrv
+----------
+Após toda essa atualização e instalação de pacotes,
+Execute o comando: reboot
+Para realizar a reinicialização do Linux e carregar os pacotes atualizados.
+
+--------------------
+
+Fazer a customização de Atalhos e Wallpaper.
+
+Colocar Settings, Firefox e ...
+
+--------------------------------------------------
