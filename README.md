@@ -8,7 +8,7 @@
 - Rodrigo Batista Freire - RM99513
 
 ## Link de Instalação do Oracle VM VirtualBox:
-<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Oracle VM VirtualBox AMD64 64bits</a>
+[Oracle VM VirtualBox AMD64 64bits](https://www.virtualbox.org/wiki/Downloads)
 
 ## Link de Instalação do Ubuntu:
-<a href="https://ubuntu.com/download/desktop/" target="_blank">Ubuntu 22.04.4 LTS - ISO AMD64 64bits</a>
+[Ubuntu 22.04.4 ISO AMD64 64bits](https://ubuntu.com/download/desktop/thank-you?version=22.04.4&architecture=amd64)
