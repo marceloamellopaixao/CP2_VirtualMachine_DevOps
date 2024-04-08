@@ -1,0 +1,8 @@
+- Baixe o Oracle VM VirtualBox 
+(Vá no campo: Platform Packages, referente ao seu Sistema Operacional)
+https://www.virtualbox.org/wiki/Downloads
+--------------------------------------------------------------------------------------------------------------
+
+- Baixe no site da Ubuntu a ISO do Linux
+https://ubuntu.com/download/desktop
+--------------------------------------------------------------------------------------------------------------

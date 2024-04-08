@@ -1,6 +1,0 @@
-Quem é você?
-
-Seu nome: Grupo Technos
-Nome do seu computador: CpDevOps2
-Usuário: cpdevops
-Senha: CpUbuntu@22
