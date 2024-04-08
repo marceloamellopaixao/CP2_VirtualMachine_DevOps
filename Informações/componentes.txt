@@ -1,3 +1,9 @@
+Projeto no GitHub:
+
+https://github.com/marceloamellopaixao/CP2_VirtualMachine_DevOps
+
+---------------
+
 Integrantes do Grupo:
 
 Kaique Santos de Andrade - RM99562
